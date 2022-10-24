@@ -24,6 +24,7 @@ export const ChatArea: React.FC = () => {
                   width="40"
                   height="40"
                   viewBox="0 0 40 40"
+                  className="cursor-pointer"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -55,7 +56,7 @@ export const ChatArea: React.FC = () => {
                   height="40"
                   viewBox="0 0 40 40"
                   fill="none"
-                  className="hover:bg-[#141414] rounded-xl"
+                  className="hover:bg-[#141414] cursor-pointer rounded-xl"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <g opacity="0.3">
@@ -105,7 +106,7 @@ export const ChatArea: React.FC = () => {
                   height="20"
                   viewBox="0 0 20 20"
                   fill="none"
-                  className="mr-[20.5px]"
+                  className=" mt-0.5 mr-[20.5px] cursor-pointer"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
@@ -119,6 +120,7 @@ export const ChatArea: React.FC = () => {
                   width="24"
                   height="24"
                   viewBox="0 0 24 24"
+                  className="cursor-pointer"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -142,9 +144,9 @@ export const ChatArea: React.FC = () => {
             </div>
             <div className="relative w-full p-6 overflow-y-auto ">
               <ul className=" font-normal">
-                <li className="flex justify-start mt-24 mb-6">
+                <li className="flex justify-start mt-28 mb-6">
                   <div className="relative max-w-xl px-5 py-5  bg-[#b882e1] text-white rounded-[20px] rounded-bl-[2px] shadow">
-                    <span className="block">
+                    <span className="block text-base leading-5">
                       Lorem ipsum dolor sit amet,
                       <br /> consectet adipiscing elit ut aliquam.
                     </span>
@@ -152,7 +154,7 @@ export const ChatArea: React.FC = () => {
                 </li>
                 <li className="flex justify-end mt-5">
                   <div className="relative max-w-xl mr-2 px-5 py-5 text-white bg-[#191919] rounded-[20px] rounded-br-[2px]  shadow">
-                    <span className="block">
+                    <span className="block text-base leading-5">
                       Lorem ipsum dolor sit amet,
                       <br /> consectet adipiscing elit ut aliquam.
                     </span>
@@ -160,7 +162,9 @@ export const ChatArea: React.FC = () => {
                 </li>
                 <li className="flex justify-end my-5">
                   <div className="relative max-w-xl mr-2 px-5 py-5 text-white bg-[#191919] rounded-[20px] rounded-br-[2px] shadow">
-                    <span className="block">Consectet adipiscing</span>
+                    <span className="block text-base leading-5">
+                      Consectet adipiscing
+                    </span>
                   </div>
                 </li>
 
@@ -173,7 +177,7 @@ export const ChatArea: React.FC = () => {
                         viewBox="0 0 40 40"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        className="absolute"
+                        className="absolute cursor-pointer"
                       >
                         <circle
                           cx="19.9999"
@@ -211,7 +215,7 @@ export const ChatArea: React.FC = () => {
                       <span className="ml-4 mt-1.5 text-sm text-[#868686]">
                         Received
                       </span>
-                      <span className="mt-1.5 ml-14 text-sm text-[#868686]">
+                      <span className="mt-1.5 ml-10 text-sm text-[#868686]">
                         21:10
                       </span>
                     </div>
@@ -239,7 +243,7 @@ export const ChatArea: React.FC = () => {
                 </li>
                 <li className="flex justify-start my-5">
                   <div className="relative max-w-xl px-5 py-5  bg-[#b882e1] text-white rounded-[20px] rounded-bl-[2px] shadow">
-                    <span className="block">
+                    <span className="block text-base leading-5">
                       <svg
                         width="156"
                         height="25"
@@ -437,14 +441,14 @@ export const ChatArea: React.FC = () => {
                 </li>
                 <li className="flex justify-end my-5 mr-2">
                   <div className="relative max-w-xl px-5 py-5 text-white bg-[#191919] rounded-[20px] rounded-br-[2px] shadow">
-                    <span className="block">
+                    <span className="block text-base leading-5">
                       Consectet adipiscing elit ut aliquam.
                     </span>
                   </div>
                 </li>
-                <li className="flex justify-start">
-                  <div className="relative max-w-xl px-5 py-5  bg-[#b882e1] text-white rounded-[20px] rounded-bl-[2px] shadow">
-                    <span className="block">
+                <li className="flex justify-start items-center">
+                  <div className="relative px-5 py-5  bg-[#b882e1] text-white rounded-[20px] rounded-bl-[2px] shadow">
+                    <span className="block text-base leading-5">
                       Lorem ipsum dolor sit amet,
                       <br /> consectet adipiscing elit ut aliquam.
                     </span>
@@ -456,7 +460,7 @@ export const ChatArea: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="flex relative bottom-6 items-center  w-full p-3 mt-1  border-gray-300">
+      <div className="flex relative bottom-5 items-center  w-full p-3 mt-1  border-gray-300">
         <div className="w-6 h-6   cursor-pointer rounded-full">
           <Image
             src={"/clip.svg"}
@@ -469,7 +473,7 @@ export const ChatArea: React.FC = () => {
         <input
           type="text"
           placeholder="Type something..."
-          className=" py-2 px-2  text-white mx-3 bg-[#0d0d0d] rounded-full outline-none "
+          className=" py-2 px-2 placeholder-opacity-50 placeholder-[#575757] text-white mx-3 bg-[#0d0d0d] rounded-full outline-none "
           name="message"
           required
         />

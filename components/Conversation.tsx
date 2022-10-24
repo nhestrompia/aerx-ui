@@ -3,7 +3,7 @@ import Image from "next/image"
 
 export const Conversation: React.FC = () => {
   return (
-    <a className="flex items-center mx-3 pl-4  py-2 text-sm transition duration-150 ease-in-out  border-gray-300 cursor-pointer hover:bg-[#1b1b1b] rounded-2xl focus:outline-none">
+    <a className="flex items-center mx-3 pl-4  py-2.5 text-sm transition duration-150 ease-in-out  border-gray-300 cursor-pointer hover:bg-[#1b1b1b] rounded-2xl focus:outline-none">
       <div className="rounded-full">
         <Image src={"/profile2.png"} layout="fixed" width={40} height={40} />
       </div>
