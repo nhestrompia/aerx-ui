@@ -34,7 +34,7 @@ export const ChatList: React.FC = () => {
           </h1>
         </div>
       </div>
-      <div className="ml-8 mr-4 mt-3 bg-[#0F0F0F] rounded-xl ">
+      <div className="ml-[30px] mr-[22px] mt-3 bg-[#0F0F0F] rounded-xl ">
         <div className="relative right-1 mr-1">
           <span className="absolute  inset-y-0 -left-1 flex items-center  pl-4">
             <svg
@@ -63,12 +63,12 @@ export const ChatList: React.FC = () => {
           </span>
           <input
             type="search"
-            className="block w-full   rounded-2xl py-3 pl-12  bg-[#0f0f0f] text-white placeholder-[#575757] placeholder-opacity-80 text-base  outline-none"
+            className="block w-full  rounded-[10px]  py-3 pl-12  bg-[#0f0f0f] text-white placeholder-[#575757] placeholder-opacity-80 text-base  outline-none"
             name="search"
             placeholder="Search user"
             required
           />
-          <div className="bg-[#6054F0] absolute left-64 ml-[5px] top-16 rounded-full w-1 h-[100px]"></div>
+          <div className="bg-[#6054F0] absolute left-64 ml-[6px] top-16 rounded-full w-1 h-[100px]"></div>
         </div>
       </div>
       <ul className="overflow-auto scroller  h-full">
