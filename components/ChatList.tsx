@@ -6,7 +6,7 @@ export const ChatList: React.FC = () => {
   const [isPersonal, setIsPersonal] = useState<boolean>(true)
 
   return (
-    <div className="container rounded-2xl  bg-[#141414] h-full   lg:col-span-1">
+    <div className="container super-ellipse  bg-[#141414] h-full   lg:col-span-1">
       <div className="flex justify-around  items-start">
         <div className="">
           <h2 className="mt-8 text-[20px] tracking-[-0.02em] font-semibold text-white">

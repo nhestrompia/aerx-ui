@@ -13,8 +13,8 @@ const Home: NextPage = () => {
         <meta name="description" content="Aerx UI" />
       </Head>
 
-      <div className=" grid w-[712px] h-[1000px]  mt-8   font-poppins bg-[#0d0d0d]   rounded-2xl  grid-cols-7 ">
-        <div className=" w-[299px] h-[1000px] ">
+      <div className=" grid w-[712px] h-[1000px]  mt-8   font-poppins bg-[#0d0d0d]  super-ellipse grid-cols-7 ">
+        <div className=" w-[299px] h-[1000px]  ">
           <ChatList />
         </div>
         <div className="col-start-4 h-[1000px]   w-[413px]">

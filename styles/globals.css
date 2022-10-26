@@ -32,3 +32,38 @@ body {
   overflow: visible;
   background-color: black;
 }
+
+@layer components {
+  .super-ellipse {
+    /* background-color: #0d0d0d; */
+    border-radius: 20px;
+    /* height: 220px; */
+    position: relative;
+    /* width: 220px; */
+  }
+
+  .super-ellipse::before,
+  .super-ellipse::after {
+    /* background-color: #ff6700; */
+    content: "";
+    position: absolute;
+    z-index: -1;
+  }
+
+  .super-ellipse::before {
+    border-radius: 1px /20px;
+    bottom: 33px;
+    left: -2px;
+    right: -2px;
+    top: 33px;
+  }
+
+  .super-ellipse::after {
+    border-radius: 20% / 2%;
+
+    bottom: -2px;
+    left: 33px;
+    right: 33px;
+    top: -2px;
+  }
+}
