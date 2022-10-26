@@ -9,7 +9,7 @@ export const ChatList: React.FC = () => {
     <div className="container rounded-2xl  bg-[#141414] h-full   lg:col-span-1">
       <div className="flex justify-around  items-start">
         <div className="">
-          <h2 className="mt-8  ml-6 text-[20px] tracking-[-0.02em] font-semibold text-white">
+          <h2 className="mt-8 text-[20px] tracking-[-0.02em] font-semibold text-white">
             Chats
           </h2>
         </div>
@@ -27,16 +27,16 @@ export const ChatList: React.FC = () => {
             className={`${
               isPersonal
                 ? "text-[#575757] py-2"
-                : " text-white py-3 px-4 bg-[#b882e1] rounded-xl"
-            }  text-sm cursor-pointer  tracking-[-0.02em] ml-0.5`}
+                : " text-white py-3 px-4 mr-0.5 bg-[#b882e1] rounded-xl"
+            }  text-sm cursor-pointer  tracking-[-0.02em] `}
           >
             Work
           </h1>
         </div>
       </div>
       <div className="ml-8 mr-4 mt-3 bg-[#0F0F0F] rounded-xl ">
-        <div className="relative  ">
-          <span className="absolute  inset-y-0 left-0 flex items-center  pl-4">
+        <div className="relative right-1 mr-1">
+          <span className="absolute  inset-y-0 -left-1 flex items-center  pl-4">
             <svg
               width="24"
               height="24"
@@ -63,16 +63,16 @@ export const ChatList: React.FC = () => {
           </span>
           <input
             type="search"
-            className="block w-full  rounded-2xl py-3 pl-12  bg-[#0f0f0f] text-white placeholder-[#575757] placeholder-opacity-80 text-base  outline-none"
+            className="block w-full   rounded-2xl py-3 pl-12  bg-[#0f0f0f] text-white placeholder-[#575757] placeholder-opacity-80 text-base  outline-none"
             name="search"
             placeholder="Search user"
             required
           />
-          <div className="bg-[#6054F0] absolute left-64 ml-0.5 top-16 rounded-full w-1 h-[100px]"></div>
+          <div className="bg-[#6054F0] absolute left-64 ml-[5px] top-16 rounded-full w-1 h-[100px]"></div>
         </div>
       </div>
       <ul className="overflow-auto scroller  h-full">
-        <span className=" ml-8 flex mb-4 mt-6">
+        <span className=" ml-[25px] flex mb-4 mt-6">
           <svg
             width="16"
             height="16"
@@ -91,8 +91,8 @@ export const ChatList: React.FC = () => {
           </div>
         </span>
         <li>
-          <a className="flex items-center mx-3 pl-4  py-2 text-sm transition duration-150 ease-in-out  border-gray-300 cursor-pointer bg-[#1b1b1b] rounded-2xl focus:outline-none">
-            <div className="rounded-full">
+          <a className="flex items-center  pl-4 mx-[17px] py-2 text-sm transition duration-150 ease-in-out  border-gray-300 cursor-pointer bg-[#1b1b1b] rounded-[15px] focus:outline-none">
+            <div className="rounded-full ml-[1px]">
               <Image
                 src={"/profile.png"}
                 layout="fixed"
@@ -100,13 +100,13 @@ export const ChatList: React.FC = () => {
                 height={40}
               />
             </div>
-            <div className="w-full pb-2">
+            <div className="w-full ml-2.5 mt-0.5 pb-2">
               <div className="flex justify-between">
-                <span className="block ml-2 font-semibold text-base tracking-[-0.02em] text-white">
+                <span className="block ml-2 mt-[3px] font-semibold text-base tracking-[-0.02em] text-white">
                   Peter White
                 </span>
               </div>
-              <span className="block ml-2 text-sm font-normal tracking-[-0.02em] text-[#B882E1]">
+              <span className="block ml-2 mb-0.5 text-sm font-normal tracking-[-0.02em] text-[#B882E1]">
                 Typing...
               </span>
             </div>
@@ -115,7 +115,7 @@ export const ChatList: React.FC = () => {
           <Conversation />
           <Conversation />
           <Conversation />
-          <span className=" ml-8 flex items-center mb-6 mt-6">
+          <span className=" ml-[25px] flex items-center mb-6 mt-6">
             <svg
               width="16"
               height="16"
@@ -141,12 +141,14 @@ export const ChatList: React.FC = () => {
               All chats
             </p>
           </span>
-          <Conversation />
-          <Conversation />
-          <Conversation />
-          <Conversation />
-          <Conversation />
-          <Conversation />
+          <div className="-mt-[11px]">
+            <Conversation />
+            <Conversation />
+            <Conversation />
+            <Conversation />
+            <Conversation />
+            <Conversation />
+          </div>
         </li>
       </ul>
     </div>

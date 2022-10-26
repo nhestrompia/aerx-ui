@@ -126,7 +126,7 @@ export const ChatArea: React.FC = () => {
                   </span>
                 </div>
               </div>
-              <div className="flex mr-[25px]">
+              <div className="flex mr-[25.57px]">
                 <svg
                   width="20"
                   height="20"
@@ -146,7 +146,7 @@ export const ChatArea: React.FC = () => {
                   width="24"
                   height="24"
                   viewBox="0 0 24 24"
-                  className="cursor-pointer"
+                  className="cursor-pointer mr-1"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -172,7 +172,7 @@ export const ChatArea: React.FC = () => {
               <ul className=" font-normal">
                 <li className="flex justify-start mt-28 mb-6">
                   <div className="relative max-w-xl px-5 py-5  bg-[#b882e1] text-white rounded-[20px] rounded-bl-[2px] shadow">
-                    <span className="block text-base leading-5">
+                    <span className="block text-base leading-[19.2px]">
                       Lorem ipsum dolor sit amet,
                       <br /> consectet adipiscing elit ut aliquam.
                     </span>
@@ -180,7 +180,7 @@ export const ChatArea: React.FC = () => {
                 </li>
                 <li className="flex justify-end mt-5">
                   <div className="relative max-w-xl mr-2 px-5 py-5 text-white bg-[#191919] rounded-[20px] rounded-br-[2px]  shadow">
-                    <span className="block text-base leading-5">
+                    <span className="block text-base leading-[19.2px]">
                       Lorem ipsum dolor sit amet,
                       <br /> consectet adipiscing elit ut aliquam.
                     </span>
@@ -188,7 +188,7 @@ export const ChatArea: React.FC = () => {
                 </li>
                 <li className="flex justify-end my-5">
                   <div className="relative max-w-xl mr-2 px-5 py-5 text-white bg-[#191919] rounded-[20px] rounded-br-[2px] shadow">
-                    <span className="block text-base leading-5">
+                    <span className="block text-base leading-[19.2px]">
                       Consectet adipiscing
                     </span>
                   </div>
@@ -269,7 +269,7 @@ export const ChatArea: React.FC = () => {
                 </li>
                 <li className="flex justify-start my-5">
                   <div className="relative max-w-xl px-5 py-5  bg-[#b882e1] text-white rounded-[20px] rounded-bl-[2px] shadow">
-                    <span className="block text-base leading-5">
+                    <span className="block text-base leading-[19.2px]">
                       <svg
                         width="156"
                         height="25"
@@ -467,26 +467,26 @@ export const ChatArea: React.FC = () => {
                 </li>
                 <li className="flex justify-end my-5 mr-2">
                   <div className="relative max-w-xl px-5 py-5 text-white bg-[#191919] rounded-[20px] rounded-br-[2px] shadow">
-                    <span className="block text-base leading-5">
+                    <span className="block text-base leading-[19.2px]">
                       Consectet adipiscing elit ut aliquam.
                     </span>
                   </div>
                 </li>
                 <li className="flex justify-start items-center">
                   <div className="relative px-5 py-5  bg-[#b882e1] text-white rounded-[20px] rounded-bl-[2px] shadow">
-                    <span className="block text-base leading-5">
+                    <span className="block text-base leading-[19.2px]">
                       Lorem ipsum dolor sit amet,
                       <br /> consectet adipiscing elit ut aliquam.
                     </span>
                   </div>
-                  <div className="bg-[#6054F0] relative left-10 -top-6 rounded-full w-1 h-[100px]"></div>
+                  <div className="bg-[#6054F0] relative left-11 -top-6 rounded-full w-1 h-[100px]"></div>
                 </li>
               </ul>
             </div>
           </div>
         </div>
       </div>
-      <div className="flex relative bottom-5 items-center  w-full p-3 mt-1  border-gray-300">
+      <div className="flex relative bottom-5 items-center  w-full p-3 mr-[1px]  border-gray-300">
         <div className="w-6 h-6   cursor-pointer rounded-full">
           <Image
             src={"/clip.svg"}
