@@ -486,8 +486,8 @@ export const ChatArea: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="flex relative bottom-5 items-center  w-full p-3 mr-[1px]  border-gray-300">
-        <div className="w-6 h-6   cursor-pointer rounded-full">
+      <div className="flex relative bottom-5 items-center  w-full p-3   border-gray-300">
+        <div className="w-6 h-6 ml-2  cursor-pointer rounded-full">
           <Image
             src={"/clip.svg"}
             height={24}
