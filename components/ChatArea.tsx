@@ -4,7 +4,7 @@ import { SmoothCorners } from "react-smooth-corners"
 
 export const ChatArea: React.FC = () => {
   return (
-    <SmoothCorners corners="32,12">
+    <SmoothCorners corners="32,16">
       <div className="container  bg-[#0d0d0d]  rounded-[20px] overflow-hidden h-full mx-auto ">
         <div className="min-w-full  rounded lg:grid lg:grid-cols-3">
           <div className=" lg:col-span-3 lg:block">
