@@ -24,6 +24,7 @@ a {
     background: black;
   }
 } */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -35,35 +36,50 @@ body {
 
 @layer components {
   .super-ellipse {
-    /* background-color: #0d0d0d; */
-    border-radius: 20px;
-    /* height: 220px; */
+    /* border-radius: 8%; */
+    /* background: #141414; */
+    background: paint(squircle);
+    /* mask-image: paint(squircle); */
+    --squircle-radius: 20px;
+    /* --squircle-smooth: number */
+    background: paint(squircle);
+    /* --squircle-fill: color // accept CSS var */
+    /* height: 1000px; */
     position: relative;
-    /* width: 220px; */
   }
 
   .super-ellipse::before,
   .super-ellipse::after {
-    /* background-color: #ff6700; */
     content: "";
     position: absolute;
     z-index: -1;
   }
 
   .super-ellipse::before {
-    border-radius: 1px /20px;
-    bottom: 33px;
-    left: -2px;
-    right: -2px;
-    top: 33px;
+    border-radius: 2% / 20%;
+    /* background-color: red; */
+    /* background-color: #141414; */
+
+    /* background-color: red; */
+
+    bottom: 1px;
+    left: -0.4px;
+    right: -0.4px;
+    top: 14px;
+    /* z-index: -1; */
   }
 
   .super-ellipse::after {
-    border-radius: 20% / 2%;
+    border-radius: 10% / 0.7%;
 
-    bottom: -2px;
-    left: 33px;
-    right: 33px;
-    top: -2px;
+    /* border-radius: 24px /32px; */
+    /* background-color: #141414; */
+    /* background-color: aqua; */
+    /* background-color: currentColor;  */
+    bottom: -1.5px;
+    left: 8.75px;
+    right: 8.75px;
+    top: -1.5px;
+    /* z-index: 1; */
   }
 }
