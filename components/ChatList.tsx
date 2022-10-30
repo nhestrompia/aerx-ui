@@ -7,7 +7,7 @@ export const ChatList: React.FC = () => {
   const [isPersonal, setIsPersonal] = useState<boolean>(true)
 
   return (
-    <SmoothCorners corners="32" borderRadius="20px">
+    <SmoothCorners corners="32,42" borderRadius="20px">
       <div className="container squircle-base rounded-[20px] pb-[43px] relative z-10  before:bg-blue-600 pb- after:bg-red-600 bg-[#141414] h-full  lg:col-span-1 ">
         <div className="flex justify-around  items-start">
           <div className="">
